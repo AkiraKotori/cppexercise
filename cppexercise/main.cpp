@@ -1,28 +1,18 @@
-#include "Sales_data.h"
-#include "Person.h"
+#include <string>
+#include "Screen.h"
+#include <iostream>
+
 
 using namespace std;
 
 void main()
 {
-    if (cin)
-    {
-        Sales_data total(cin);
-        while (cin)
-        {
-            Sales_data trans(cin);
-            if (total.isbn() == trans.isbn())
-                total.combine(trans);
-            else
-            {
-                print(cout, total) << endl;
-                total = trans;
-            }
-        }
-        print(cout, total) << endl;
-    }
-    else
-        cout << "No data?!" << endl;
+    Screen myscreen(5, 5, 'x');
+    myscreen.move(4, 0).set('#').display(cout);
+    cout << "\n";
+    myscreen.display(cout);
+    cout << "\n";
+
+
+
 }
-
-

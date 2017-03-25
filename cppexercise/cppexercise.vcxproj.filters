@@ -29,5 +29,8 @@
     <ClInclude Include="Person.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

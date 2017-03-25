@@ -22,3 +22,27 @@ ostream &print(ostream &os, const Sales_data &item)
         << " revenue:" << item.revenue;
     return os;
 }
+
+void sale_apps()
+{
+    if (cin)
+    {
+        Sales_data total(cin);
+        while (cin)
+        {
+            Sales_data trans(cin);
+            if (total.isbn() == trans.isbn())
+                total.combine(trans);
+            else
+            {
+                print(cout, total) << endl;
+                total = trans;
+            }
+        }
+        print(cout, total) << endl;
+    }
+    else
+        cout << "No data?!" << endl;
+}
+
+
