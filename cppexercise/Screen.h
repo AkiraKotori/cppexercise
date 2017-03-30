@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <vector>
+
 
 class Screen
 {
@@ -35,7 +37,6 @@ public:
         do_display(os);
         return *this;
     }
-   
 private:
     pos cursor = 0;
     pos width = 0, height = 0;

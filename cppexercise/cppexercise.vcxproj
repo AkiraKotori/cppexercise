@@ -146,6 +146,8 @@
     <ClCompile Include="Sales_data.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="MyDebug.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Screen.h" />
